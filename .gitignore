@@ -1,0 +1,16 @@
+.DS_Store
+../CreativePeople-test/.idea
+.vscode
+package-lock.json
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+build/
+.publish
+npm-debug.*
+source/css/*.css
+source/css/*.map
+Thumbs.db

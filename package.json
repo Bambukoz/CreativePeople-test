@@ -1,0 +1,62 @@
+{
+  "name": "creative_people_test",
+  "private": true,
+  "description": "Тестовое задание CreativePeople",
+  "author": "Alexey Ezhov <ezhov-a@yandex.ru>",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.8.x",
+    "browser-sync": "2.26.x",
+    "eslint": "7.1.0",
+    "eslint-config-htmlacademy": "0.6.0",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-install": "^1.1.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "normalize.css": "^8.0.1",
+    "pixel-glass": "^1.0.13",
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "../CreativePeople-test/node_modules/.bin/editorconfig-cli",
+    "stylelint": "../CreativePeople-test/node_modules/.bin/stylelint \\\"source/sass/**/*.scss\\\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && ../CreativePeople-test/node_modules/.bin/eslint source/js/",
+    "start": "../CreativePeople-test/node_modules/.bin/gulp",
+    "build": "../CreativePeople-test/node_modules/.bin/gulp build",
+    "images": "../CreativePeople-test/node_modules/.bin/gulp images",
+    "webp": "../CreativePeople-test/node_modules/.bin/gulp webp",
+    "sprite": "../CreativePeople-test/node_modules/.bin/gulp sprite",
+    "deploy": "../CreativePeople-test/node_modules/.bin/gulp deploy"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "12.18.2"
+  },
+  "dependencies": {
+    "del": "^5.1.x"
+  }
+}
