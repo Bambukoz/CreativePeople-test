@@ -1,0 +1,106 @@
+.lead {
+  @include page-wrapper-mobile;
+  width: 100%;
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/png/background-main-mobile@1x.png");
+  background-color: $color-background-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  margin-right: auto;
+
+  @include retina {
+    background-image: url("../img/png/background-main-mobile@2x.png");
+  }
+
+  @media (min-width: 720px) {
+    background-image: url("../img/png/background-main-desktop@1x.png");
+
+    @include retina {
+      background-image: url("../img/png/background-main-desktop@2x.png");
+    }
+  }
+
+  @include desktop {
+    @include page-wrapper-desktop;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.lead__wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include desktop {
+    width: 502px;
+  }
+}
+
+.lead__title {
+  @include style-reset;
+  font-family: "Navigo", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.2px;
+  color: $color-white;
+
+  @include desktop {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: normal;
+    margin-bottom: 16px;
+  }
+}
+
+.lead__percent {
+  font-family: "Navigo", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.2px;
+  color: $color-white;
+
+  @include desktop {
+    font-weight: 900;
+    font-size: 108px;
+    line-height: 70px;
+    letter-spacing: normal;
+    margin-bottom: 47px;
+  }
+
+  & span {
+    font-size: 42px;
+
+    @include desktop {
+      font-size: 72px;
+    }
+  }
+}
+
+.lead__btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-primary;
+  color: $color-off-black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 109px;
+
+  @include desktop {
+    position: static;
+    width: 213px;
+    padding: 15px 28px;
+    border-radius: 10px;
+  }
+}

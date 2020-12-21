@@ -10,3 +10,8 @@
   }
 }
 
+@mixin retina {
+  @media (min-resolution: $retina-x2) {
+    @content;
+  }
+}

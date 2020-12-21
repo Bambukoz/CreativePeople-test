@@ -25,21 +25,20 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "normalize.css": "^8.0.1",
     "pixel-glass": "^1.0.13",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
-    "editorconfig": "../CreativePeople-test/node_modules/.bin/editorconfig-cli",
-    "stylelint": "../CreativePeople-test/node_modules/.bin/stylelint \\\"source/sass/**/*.scss\\\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && ../CreativePeople-test/node_modules/.bin/eslint source/js/",
-    "start": "../CreativePeople-test/node_modules/.bin/gulp",
-    "build": "../CreativePeople-test/node_modules/.bin/gulp build",
-    "images": "../CreativePeople-test/node_modules/.bin/gulp images",
-    "webp": "../CreativePeople-test/node_modules/.bin/gulp webp",
-    "sprite": "../CreativePeople-test/node_modules/.bin/gulp sprite",
-    "deploy": "../CreativePeople-test/node_modules/.bin/gulp deploy"
+    "editorconfig": "editorconfig-cli",
+    "stylelint":  "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "start": "gulp",
+    "build": "gulp build",
+    "images": "gulp images",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite",
+    "deploy": "gulp deploy"
   },
   "browserslist": [
     "last 2 versions",
@@ -57,6 +56,7 @@
     "node": "12.18.2"
   },
   "dependencies": {
-    "del": "^5.1.x"
+    "del": "^5.1.x",
+    "normalize.css": "^8.0.1"
   }
 }

@@ -1,0 +1,15 @@
+.btn {
+  @include btn-reset;
+  background-color: $color-primary;
+  color: $color-off-black;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-hover;
+  }
+
+  &:disabled {
+    background-color: $color-background-white-06;
+  }
+}
