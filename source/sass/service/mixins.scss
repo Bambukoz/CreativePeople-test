@@ -47,6 +47,11 @@
   padding-right: $padding-desktop;
 }
 
+@mixin auto-margin {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @mixin btn-reset {
   background-color: transparent;
   border: none;

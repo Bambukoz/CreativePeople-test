@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Тестовое задание CreativePeople</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/Navigo-Regular.woff2" as="font">
     <link rel="preload" href="fonts/Navigo-Regular.woff" as="font">
     <link rel="preload" href="fonts/Navigo-Bold.woff2" as="font">
@@ -18,10 +18,43 @@
     <link rel="preload" href="fonts/ALS-Hauss-Medium.woff" as="font">
 </head>
 <body class="page">
-<header class="page__header header js-header"></header>
-<main></main>
+<header class="page__header header">
+    <div class="header__wrapper">
+        <a class="header__logo header__logo--main" href="#nowhere" aria-label="Логотип Райффайзенбанк">
+            <svg>
+                <use xlink:href="img/sprite.svg#logo-raif"></use>
+            </svg>
+        </a>
+        <a class="header__logo header__logo--partner" href="#nowhere">
+            <img src="img/svg/logo-visa.svg" width="75" height="24" alt="Логотип партнера - Visa">
+        </a>
+        <div class="header__contacts">
+            <a class="header__link" href="tel:+78007707562">
+                <svg width="24" height="24">
+                    <use xlink:href="img/sprite.svg#icon-contact"></use>
+                </svg>
+                <span class="header__phone">8 800 770-75-62</span>
+            </a>
+            <p class="header__text">Бесплатно по России</p>
+        </div>
+    </div>
+</header>
+
+<main class="page__main main">
+    <section class="lead">
+        <div class="lead__wrapper">
+            <div class="promo">
+                <p class="promo__text promo__text--mobile">Обслуживание 0₽</p>
+                <p class="promo__text promo__text--desktop">Бесплатное обслуживание</p>
+            </div>
+            <h1 class="lead__title">Кредитная карта с кэшбэком</h1>
+            <span class="lead__percent">1,5<span>%</span></span>
+        </div>
+        <a class="btn lead__btn" href="#form">Оформить онлайн</a>
+    </section>
+</main>
 <footer class="page__footer footer"></footer>
-<script src="js/script.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
