@@ -1,0 +1,11 @@
+.credit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.credit__title {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

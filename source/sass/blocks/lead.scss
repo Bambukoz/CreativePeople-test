@@ -17,7 +17,7 @@
     background-image: url("../img/png/background-main-mobile@2x.png");
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 1024px) {
     background-image: url("../img/png/background-main-desktop@1x.png");
 
     @include retina {
@@ -33,12 +33,18 @@
 }
 
 .lead__wrapper {
+  @include auto-margin;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.lead__inner {
   width: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
-  @include desktop {
+  @media (min-width: 1060px) {
     width: 502px;
   }
 }
@@ -61,6 +67,7 @@
 }
 
 .lead__percent {
+  @include style-reset;
   font-family: "Navigo", sans-serif;
   font-weight: 900;
   font-size: 64px;
@@ -96,9 +103,11 @@
   font-weight: 500;
   font-size: 18px;
   padding: 15px 109px;
+  z-index: 100;
 
   @include desktop {
     position: static;
+    display: block;
     width: 213px;
     padding: 15px 28px;
     border-radius: 10px;

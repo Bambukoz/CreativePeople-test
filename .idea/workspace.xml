@@ -34,35 +34,26 @@
       <change afterPath="$PROJECT_DIR$/../redsoft-test/.publish/img/webp/img4@2x.webp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../redsoft-test/.publish/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../redsoft-test/.publish/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/btn.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/lead.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/promo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/cashback.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/credit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/offer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Grade/source/sass/blocks/price-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Grade/source/sass/blocks/price-card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/.publish" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/source/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/source/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/png/background-main-desktop@1x.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/png/background-main-desktop@2x.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/png/background-main-mobile@1x.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/png/background-main-mobile@2x.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/source/img/svg/icon-contact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/svg/icon-contact.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/img/svg/logo-raif.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/svg/logo-raif.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/img/svg/logo-visa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/svg/logo-visa.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/img/svg/progress.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/svg/sticker.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/svg/sticker.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/service/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/service/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/service/media-queries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/service/media-queries.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/service/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/service/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/lead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/lead.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/promo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/service/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/service/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608551919122</updated>
       <workItem from="1608551920305" duration="4773000" />
-      <workItem from="1608558146137" duration="14409000" />
+      <workItem from="1608558146137" duration="40366000" />
     </task>
     <servers />
   </component>

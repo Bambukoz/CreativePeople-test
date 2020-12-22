@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   margin-bottom: 14px;
 
-  @include desktop {
+  @media (min-width: 1060px) {
     width: 236px;
     background-image: url("../img/svg/sticker-desktop.svg");
     margin-bottom: 13px;

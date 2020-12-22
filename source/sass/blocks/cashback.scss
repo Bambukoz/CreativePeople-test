@@ -1,0 +1,126 @@
+.cashback {
+  @include page-wrapper-mobile;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @include desktop {
+    @include page-wrapper-desktop;
+    padding-top: 79px;
+    padding-bottom: 79px;
+    flex-wrap: wrap;
+  }
+}
+
+.cashback__title {
+  @include style-reset;
+  font-family: "Navigo", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 64px;
+  }
+}
+
+.cashback__list {
+  @include list-reset;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1060px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 24px;
+  }
+}
+
+.cashback__item {
+  @include style-reset;
+  width: 100%;
+  min-height: 140px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: $color-background-blue;
+  border-radius: 14px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 30px;
+  padding-right: 140px;
+  margin-bottom: 14px;
+
+  @media (min-width: 1060px) {
+    width: 31.85%;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 31.92%;
+    min-height: 180px;
+    padding-right: 150px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cashback__text {
+  @include style-reset;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: $color-white;
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.cashback__img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  line-height: 0;
+
+  &--cash {
+    top: 20px;
+    right: 20px;
+
+    @include desktop {
+      top: 25px;
+      right: 30px;
+    }
+  }
+
+  &--bag {
+    top: 0;
+    right: 28px;
+
+    @include desktop {
+      top: 0;
+      right: 30px;
+    }
+  }
+
+  &--car {
+    top: 11px;
+    right: 20px;
+
+    @include desktop {
+      top: 6px;
+      right: 0;
+    }
+  }
+}
