@@ -1,5 +1,6 @@
 .main {
   @include auto-margin;
   display: flex;
+  flex-direction: column;
   padding-bottom: 60px;
 }
