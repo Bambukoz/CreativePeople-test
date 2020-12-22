@@ -43,15 +43,106 @@
 <main class="page__main main">
     <section class="lead">
         <div class="lead__wrapper">
-            <div class="promo">
-                <p class="promo__text promo__text--mobile">Обслуживание 0₽</p>
-                <p class="promo__text promo__text--desktop">Бесплатное обслуживание</p>
+            <div class="lead__inner">
+                <div class="promo">
+                    <p class="promo__text promo__text--mobile">Обслуживание 0₽</p>
+                    <p class="promo__text promo__text--desktop">Бесплатное обслуживание</p>
+                </div>
+                <h1 class="lead__title">Кредитная карта с кэшбэком</h1>
+                <p class="lead__percent">1,5<span>%</span></p>
             </div>
-            <h1 class="lead__title">Кредитная карта с кэшбэком</h1>
-            <span class="lead__percent">1,5<span>%</span></span>
+            <a class="btn lead__btn" href="#form">Оформить онлайн</a>
         </div>
-        <a class="btn lead__btn" href="#form">Оформить онлайн</a>
     </section>
+    <section class="offer">
+        <h2 class="visually-hidden">Условия использования</h2>
+        <ul class="offer__list">
+            <li class="offer__item">
+                <p class="offer__text offer__text--accent">1,5<span>%</span></p>
+                <p class="offer__text">кэшбэк рублями</p>
+            </li>
+            <li class="offer__item">
+                <p class="offer__text offer__text--accent">0₽</p>
+                <p class="offer__text">обслуживание</p>
+            </li>
+            <li class="offer__item offer__item--desktop">
+                <p class="offer__text offer__text--accent"><span>до </span>52<span> дней</span></p>
+                <p class="offer__text">без процентов</p>
+            </li>
+            <li class="offer__item">
+                <p class="offer__text offer__text--accent"><span>до </span>600<span> тыс. ₽</span></p>
+                <p class="offer__text offer__text--mobile">и 52 дня без %</p>
+                <p class="offer__text offer__text--desktop">кредитный лимит</p>
+            </li>
+        </ul>
+    </section>
+    <section class="cashback">
+        <h2 class="cashback__title">Кэшбэк 1,5% без&nbsp;ограничений</h2>
+        <ul class="cashback__list">
+            <li class="cashback__item">
+                <p class="cashback__text">Кэшбэк рублями</p>
+                <div class="cashback__img-wrapper cashback__img-wrapper--cash">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/cash-desktop@1x.webp, img/png/cash-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/cash-mobile@1x.webp, img/png/cash-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/cash-desktop@1x.png, img/png/cash-desktop@2x.png 2x">
+                        <img src="img/png/cash-mobile@1x.png" srcset="img/png/cash-mobile@2x.png 2x" alt="Желтые рубли">
+                    </picture>
+                </div>
+            </li>
+            <li class="cashback__item">
+                <p class="cashback__text">За любые покупки</p>
+                <div class="cashback__img-wrapper cashback__img-wrapper--bag">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/bag-desktop@1x.webp, img/png/bag-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/bag-mobile@1x.webp, img/png/bag-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/bag-desktop@1x.png, img/png/bag-desktop@2x.png 2x">
+                        <img src="img/png/bag-mobile@1x.png" srcset="img/png/bag-mobile@2x.png 2x" alt="Желтая суar">
+                    </picture>
+                </div>
+            </li>
+            <li class="cashback__item">
+                <p class="cashback__text">Без&nbsp;лимитов и&nbsp;ограничений</p>
+                <div class="cashback__img-wrapper cashback__img-wrapper--car">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/car-desktop@1x.webp, img/png/car-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/car-mobile@1x.webp, img/png/car-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/car-desktop@1x.png, img/png/car-desktop@2x.png 2x">
+                        <img src="img/png/car-mobile@1x.png" srcset="img/png/car-mobile@2x.png 2x" alt="Желтая машина">
+                    </picture>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="credit">
+        <h2 class="credit__title"><span>Возьмите </span>дополнительный кредит<span> на любые цели</span></h2>
+        <p class="credit__text"><span>Кредит на любые цели. </span>Получите решение за 2 минуты</p>
+        <form class="credit__form calculator" action="#nowhere">
+            <div class="calculator__amount">
+                <label class="calculator__label" for="amount">Какая сумма нужна?</label>
+                <input class="calculator__input" id="amount" type="range" min="90000" max="2000000" step="10000" value="500000">
+                <p class="calculator__text" id="amount-text"><span class="calculator__value"></span>500 000 ₽</p>
+            </div>
+            <div class="calculator__term">
+                <label class="calculator__label" for="term">На какой срок?</label>
+                <input class="calculator__input" id="term" type="range" min="13" max="60" step="1" value="36">
+                <p class="calculator__text" id="term-text"><span class="calculator__value"></span>36 мес.</p>
+            </div>
+            <div class="calculator__result">
+                <ul class="calculator__list">
+                    <li class="calculator__item">
+                        <p class="calculator__text calculator__text--accent" id="loan_rate">10,99%</p>
+                        <p class="calculator__text">ваша ставка</p>
+                    </li>
+                    <li class="calculator__item">
+                        <p class="calculator__text calculator__text--accent" id="monthly_payment">14 265 ₽</p>
+                        <p class="calculator__text">ежемесячный платёж</p>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </section>
+
 </main>
 <footer class="page__footer footer"></footer>
 <script src="js/script.js"></script>
