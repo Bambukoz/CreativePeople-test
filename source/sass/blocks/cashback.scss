@@ -4,19 +4,19 @@
   display: flex;
   flex-direction: column;
   padding-top: 52px;
-  padding-bottom: 52px;
+  padding-bottom: 42px;
 
   @include desktop {
     @include page-wrapper-desktop;
     padding-top: 79px;
-    padding-bottom: 79px;
+    padding-bottom: 90px;
     flex-wrap: wrap;
   }
 }
 
 .cashback__title {
   @include style-reset;
-  font-family: "Navigo", sans-serif;
+  font-family: $font-family-secondary;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;

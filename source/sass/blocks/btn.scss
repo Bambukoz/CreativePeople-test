@@ -5,7 +5,8 @@
   text-align: center;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-color: $color-primary-hover;
   }
 

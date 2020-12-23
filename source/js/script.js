@@ -1,33 +1,72 @@
 'use strict';
-
 (() => {
-  const calculatorForm = document.querySelector(`.calculator`);
-  const amountInput = calculatorForm.querySelector(`#amount`);
-  const amountText = calculatorForm.querySelector(`#amount-text`);
-  const termInput = calculatorForm.querySelector(`#term`);
-  const termText = calculatorForm.querySelector(`#term-text`);
-  const monthlyPayment = calculatorForm.querySelector(`#monthly_payment`);
+  const calculator = document.querySelector(`.calculator`);
+  const amountInput = calculator.querySelector(`#amount`);
+  const progerssAmount = calculator.querySelector(`#progress-amount`);
+  const amountText = calculator.querySelector(`#amount-text`);
+  const termInput = calculator.querySelector(`#term`);
+  const progerssTerm = calculator.querySelector(`#progress-term`);
+  const termText = calculator.querySelector(`#term-text`);
+  const creditResult = document.querySelector(`.credit__result`);
+  const loanRate = creditResult.querySelector(`#loan_rate`);
+  const monthlyPayment = creditResult.querySelector(`#monthly_payment`);
 
-  const setValueOnChange = (evt) => {
-    if (evt.target === amountInput) {
-      let textValue = amountInput.value.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1 `);
-      amountText.textContent = `${textValue} ₽`;
+  const setProgressValue = (target) => {
+    let b = (target.value / target.max);
+    if (target === amountInput) {
+      progerssAmount.style.transform = `scale(${b}, 1)`;
     } else {
-      termText.textContent = `${termInput.value} мес.`;
+      if (b <= 0.5) {
+        progerssTerm.style.transform = `scale(${b - 0.16}, 1)`;
+      } else if (b <= 0.7) {
+        progerssTerm.style.transform = `scale(${b - 0.08}, 1)`;
+      } else {
+        progerssTerm.style.transform = `scale(${b - 0.05}, 1)`;
+      }
     }
   };
 
-  const setMonthlyPayment = () => {
-    let monthCount = parseInt(termInput.value, 10);
-    let sumCredit = parseInt(amountInput.value, 10);
-    const RATE = 10.99;
-    let ratePerMonth = (RATE / 12) / 100;
-    let result = Math.round((sumCredit * (ratePerMonth + (ratePerMonth / (Math.pow(ratePerMonth + 1, monthCount) - 1)))))
-      .toString()
-      .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1 `);
-    monthlyPayment.textContent = `${result} ₽`;
+  const setValueOnChange = (evt) => {
+    const target = evt.target;
+    if (evt.target === amountInput) {
+      const textValue = amountInput.value.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1 `);
+      amountText.textContent = `${textValue} ₽`;
+      setProgressValue(target);
+    } else {
+      termText.textContent = `${termInput.value} мес.`;
+      setProgressValue(target);
+    }
   };
 
-  calculatorForm.addEventListener(`input`, setValueOnChange);
-  calculatorForm.addEventListener(`change`, setMonthlyPayment);
+  const setSumCredit = () => {
+    return parseInt(amountInput.value, 10);
+  };
+
+  const setMonthCount = () => {
+    return parseInt(termInput.value, 10);
+  };
+
+  const setRate = () => {
+    return (loanRate.dataset.value) / 12 / 100;
+  };
+
+  const calculatePayment = () => {
+    const sumCredit = setSumCredit();
+    const monthCount = setMonthCount();
+    const rate = setRate();
+    return Math.round((sumCredit * (rate + (rate / (Math.pow(rate + 1, monthCount) - 1)))))
+      .toString()
+      .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1 `);
+  };
+
+  const setMonthlyPayment = () => {
+    monthlyPayment.textContent = `${calculatePayment()} ₽`;
+  };
+
+  setMonthlyPayment();
+  setProgressValue(amountInput);
+  setProgressValue(termInput);
+
+  calculator.addEventListener(`input`, setValueOnChange);
+  calculator.addEventListener(`change`, setMonthlyPayment);
 })();

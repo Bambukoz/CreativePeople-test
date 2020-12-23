@@ -121,32 +121,59 @@
         </ul>
     </section>
     <section class="credit">
-        <h2 class="credit__title"><span>Возьмите </span>дополнительный кредит<span> на любые цели</h2>
+        <h2 class="credit__title"><span class="credit__title--desktop">Возьмите </span>дополнительный кредит<span
+                class="credit__title--mobile"> на любые цели</span></h2>
         <p class="credit__text"><span>Кредит на любые цели. </span>Получите решение за 2 минуты</p>
-        <form class="credit__form calculator" action="#nowhere">
-            <div class="calculator__amount">
-                <label class="calculator__label" for="amount">Какая сумма нужна?</label>
-                <input class="calculator__input" id="amount" type="range" min="90000" max="2000000" step="10000" value="500000">
-                <p class="calculator__text" id="amount-text"><span class="calculator__value"></span>500 000 ₽</p>
+        <article class="credit__wrapper">
+            <div class="calculator">
+                <div class="calculator__block">
+                    <div class="calculator__wrapper">
+                        <label class="calculator__label" for="amount">Какая сумма нужна?</label>
+                        <p class="calculator__text" id="amount-text"><span class="calculator__value"></span>500 000 ₽
+                        </p>
+                    </div>
+                    <div class="calculator__input-wrapper">
+                        <span class="calculator__progress" id="progress-amount"></span>
+                        <input class="calculator__input" id="amount" name="amount" type="range" min="90000" max="2000000" step="1000" value="500000">
+                    </div>
+                    <div class="calculator__wrapper">
+                        <span class="calculator__legend">90 000 ₽</span>
+                        <span class="calculator__legend">2 000 000 ₽</span>
+                    </div>
+                </div>
+                <div class="calculator__block">
+                    <div class="calculator__wrapper">
+                        <label class="calculator__label" for="term">На какой срок?</label>
+                        <p class="calculator__text" id="term-text"><span class="calculator__value"></span>36 мес.</p>
+                    </div>
+                    <div class="calculator__input-wrapper">
+                        <span class="calculator__progress" id="progress-term"></span>
+                        <input class="calculator__input" id="term" name="term" type="range" min="13" max="60" step="1" value="36">
+                    </div>
+                    <div class="calculator__wrapper">
+                        <span class="calculator__legend">13 мес.</span>
+                        <span class="calculator__legend">60 мес.</span>
+                    </div>
+                </div>
             </div>
-            <div class="calculator__term">
-                <label class="calculator__label" for="term">На какой срок?</label>
-                <input class="calculator__input" id="term" type="range" min="13" max="60" step="1" value="36">
-                <p class="calculator__text" id="term-text"><span class="calculator__value"></span>36 мес.</p>
-            </div>
-            <div class="calculator__result">
-                <ul class="calculator__list">
-                    <li class="calculator__item">
-                        <p class="calculator__text calculator__text--accent" id="loan_rate">10,99%</p>
-                        <p class="calculator__text">ваша ставка</p>
+            <div class="credit__result-wrapper">
+                <ul class="credit__result">
+                    <li class="credit__item">
+                        <p class="credit__item-text credit__item-text--accent" id="loan_rate" data-value="10.99">
+                            10,99%</p>
+                        <p class="credit__item-text">ваша ставка</p>
                     </li>
-                    <li class="calculator__item">
-                        <p class="calculator__text calculator__text--accent" id="monthly_payment">14 265 ₽</p>
-                        <p class="calculator__text">ежемесячный платёж</p>
+                    <li class="credit__item">
+                        <p class="credit__item-text credit__item-text--accent" id="monthly_payment">14 265 ₽</p>
+                        <p class="credit__item-text">ежемесячный платёж</p>
                     </li>
                 </ul>
+                <a class="btn credit__btn" href="#nowhere">Получить кредит</a>
+                <div class="credit__info-wrapper">
+                    <p class="credit__info">Расчет платежа приведен с учетом финансовой защиты. Не является офертой.</p>
+                </div>
             </div>
-        </form>
+        </article>
     </section>
 
 </main>
