@@ -34,7 +34,10 @@
       <change afterPath="$PROJECT_DIR$/../redsoft-test/.publish/img/webp/img4@2x.webp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../redsoft-test/.publish/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../redsoft-test/.publish/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/sass/blocks/calculator.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/sass/blocks/form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Grade/source/sass/blocks/price-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Grade/source/sass/blocks/price-card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Keksobooking/js/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Keksobooking/js/backend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pink/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Pink/gulpfile.js" afterDir="false" />
@@ -45,18 +48,17 @@
       <change beforePath="$PROJECT_DIR$/../Pink/source/sass/global.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/.publish" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redsoft-test/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/source/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/source/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/source/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/svg/arrow-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/svg/arrow-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/svg/arrow-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/source/img/svg/arrow-right.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/btn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/btn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/cashback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/cashback.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/js/calculator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/credit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/credit.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/sass/blocks/lead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/lead.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/offer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/offer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/service/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/service/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/service/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/service/mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608551919122</updated>
       <workItem from="1608551920305" duration="4773000" />
-      <workItem from="1608558146137" duration="71641000" />
+      <workItem from="1608558146137" duration="97017000" />
     </task>
     <servers />
   </component>

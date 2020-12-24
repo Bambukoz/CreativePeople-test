@@ -1,0 +1,26 @@
+.form {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-background-gray;
+
+  @include desktop {
+    @include auto-margin;
+    width: 964px;
+    min-height: 511px;
+    border: 1px solid $color-background-white-06;
+    border-radius: 12px;
+    background-color: transparent;
+  }
+}
+
+.form__text {
+  @include style-reset;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $color-text-gray-lighter;
+}
