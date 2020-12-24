@@ -51,7 +51,7 @@
                 <h1 class="lead__title">Кредитная карта с кэшбэком</h1>
                 <p class="lead__percent">1,5<span>%</span></p>
             </div>
-            <a class="btn lead__btn" href="#form">Оформить онлайн</a>
+            <a class="btn lead__btn" href="#form" id="lead-btn">Оформить онлайн</a>
         </div>
     </section>
     <section class="offer">
@@ -118,6 +118,7 @@
         <h2 class="credit__title"><span class="credit__title--desktop">Возьмите </span>дополнительный кредит<span class="credit__title--mobile"> на любые цели</span></h2>
         <p class="credit__text"><span>Кредит на любые цели. </span>Получите решение за 2 минуты</p>
         <article class="credit__wrapper">
+            <h2 class="visually-hidden">Кредитный калькулятор</h2>
             <div class="calculator">
                 <div class="calculator__block">
                     <div class="calculator__wrapper">
@@ -168,10 +169,161 @@
             </div>
         </article>
     </section>
-
+    <section class="card" id="form">
+        <div class="card__lead">
+            <h2 class="card__title">Оформите карту онлайн</h2>
+            <ul class="card__list">
+                <li class="card__item">
+                    <svg width="20" height="24">
+                        <use xlink:href="img/sprite.svg#icon-doc"></use>
+                    </svg>
+                    <p class="card__text">Заполните онлайн-заявку. Это&nbsp;займет не больше 5 минут</p>
+                </li>
+                <li class="card__item">
+                    <svg width="22" height="24">
+                        <use xlink:href="img/sprite.svg#icon-message"></use>
+                    </svg>
+                    <p class="card__text">Через 2 минуты придет смс с&nbsp;решением</p>
+                </li>
+                <li class="card__item">
+                    <svg width="21" height="20">
+                        <use xlink:href="img/sprite.svg#icon-pay"></use>
+                    </svg>
+                    <p class="card__text">Получите карту с бесплатной доставкой или в отделении</p>
+                </li>
+            </ul>
+        </div>
+        <form class="form" action="#nowhere">
+            <p class="form__text">Форма заявки на кредитную карту</p>
+        </form>
+    </section>
+    <section class="app">
+        <h2 class="app__title">Удобный мобильный&nbsp;банк</h2>
+        <p class="app__text">Пользуйтесь услугами онлайн без&nbsp;визита&nbsp;в&nbsp;отделение</p>
+        <div class="slider">
+            <input class="app__toggle app__toggle--slide-1 visually-hidden" type="radio" name="radio-btn" id="slide-1" checked="checked">
+            <input class="app__toggle app__toggle--slide-2 visually-hidden" type="radio" name="radio-btn" id="slide-2">
+            <input class="app__toggle app__toggle--slide-3 visually-hidden" type="radio" name="radio-btn" id="slide-3">
+            <input class="app__toggle app__toggle--slide-4 visually-hidden" type="radio" name="radio-btn" id="slide-4">
+            <input class="app__toggle app__toggle--slide-5 visually-hidden" type="radio" name="radio-btn" id="slide-5">
+            <input class="app__toggle app__toggle--slide-6 visually-hidden" type="radio" name="radio-btn" id="slide-6">
+            <div class="app__label-group">
+                <label class="app__label app__label--slide-1" for="slide-1"></label>
+                <label class="app__label app__label--slide-2" for="slide-2"></label>
+                <label class="app__label app__label--slide-3" for="slide-3"></label>
+                <label class="app__label app__label--slide-4" for="slide-4"></label>
+                <label class="app__label app__label--slide-5" for="slide-5"></label>
+                <label class="app__label app__label--slide-6" for="slide-6"></label>
+            </div>
+            <ul class="app__list" id="scroll">
+                <li class="app__item">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/phone-screen-1-desktop@1x.webp, img/png/phone-screen-1-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/phone-screen-1-mobile@1x.webp, img/png/phone-screen-1-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/phone-screen-1-desktop@1x.png, img/png/phone-screen-1-desktop@2x.png 2x">
+                        <img src="img/png/phone-screen-1-mobile@1x.png" srcset="img/png/phone-screen-1-mobile@2x.png 2x" alt="Промо приложения">
+                    </picture>
+                </li>
+                <li class="app__item">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/phone-screen-2-desktop@1x.webp, img/png/phone-screen-2-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/phone-screen-2-mobile@1x.webp, img/png/phone-screen-2-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/phone-screen-2-desktop@1x.png, img/png/phone-screen-2-desktop@2x.png 2x">
+                        <img src="img/png/phone-screen-2-mobile@1x.png" srcset="img/png/phone-screen-2-mobile@2x.png 2x" alt="Промо приложения">
+                    </picture>
+                </li>
+                <li class="app__item">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/phone-screen-3-desktop@1x.webp, img/png/phone-screen-3-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/phone-screen-3-mobile@1x.webp, img/png/phone-screen-3-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/phone-screen-3-desktop@1x.png, img/png/phone-screen-3-desktop@2x.png 2x">
+                        <img src="img/png/phone-screen-3-mobile@1x.png" srcset="img/png/phone-screen-3-mobile@2x.png 2x" alt="Промо приложения">
+                    </picture>
+                </li>
+                <li class="app__item">
+                    <picture>
+                        <source media="(min-width: 1400px)" type="image/webp" srcset="img/png/phone-screen-4-desktop@1x.webp, img/png/phone-screen-4-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="img/png/phone-screen-4-mobile@1x.webp, img/png/phone-screen-4-mobile@2x.webp 2x">
+                        <source media="(min-width: 1400px)" srcset="img/png/phone-screen-4-desktop@1x.png, img/png/phone-screen-4-desktop@2x.png 2x">
+                        <img src="img/png/phone-screen-4-mobile@1x.png" srcset="img/png/phone-screen-4-mobile@2x.png 2x" alt="Промо приложения">
+                    </picture>
+                </li>
+            </ul>
+            <button class="app__btn app__btn--left" type="button" aria-label="Листать влево"></button>
+            <button class="app__btn app__btn--right" type="button" aria-label="Листать вправо"></button>
+        </div>
+        <a class="btn app__link-btn" href="#form">Оформить карту онлайн</a>
+    </section>
 </main>
-<footer class="page__footer footer"></footer>
+<footer class="page__footer footer">
+    <section class="footer__top">
+        <h2 class="visually-hidden">Юридическия информация</h2>
+        <p class="footer__text footer__text--top">© АО «Райффайзенбанк»</p>
+        <p class="footer__text footer__text--top">Генеральная лицензия Банка России № 3292 от 17.02.2015. Юридический
+            адрес: 129090, Москва, ул. Троицкая, д.&nbsp;17,&nbsp;стр. 1</p>
+    </section>
+    <section class="footer__bottom">
+        <h2 class="visually-hidden">Условия проведения акции</h2>
+        <div class="footer__wrapper">
+            <p class="footer__text footer__text--bottom">Кэшбэк – возврат средств. Кэшбэк начисляется на любые покупки,
+                совершенные по карте VISA Кэшбэк на всё, в размере 1,5 % от суммы расходной операции. Начисленный за
+                календарный месяц кэшбэк выплачивается рублями на счет клиента в течение 7 рабочих дней после окончания
+                соответствующего календарного месяца. Кэшбэк не начисляется за совершение некоторых видов операций
+                согласно правилам программы, размещенным на сайте raif.ru.</p>
+            <p class="footer__text footer__text--bottom">Сроки проведения акции «Бесплатная кредитная карта «Кэшбэк на
+                всё» для существующих и новых клиентов АО «Райффайзенбанк» — с 01.06.20 по 31.08.20. Информация об
+                организаторе акции, о правилах ее проведения, количестве призов или выигрышей по результатам такой
+                акции, сроках, месте и порядке их получения размещена на на raif.ru или по 8 800 770 09 08.</p>
+            <p class="footer__text footer__text--bottom">В течение льготного периода до 52 дней, проценты по кредиту не
+                начисляются на безналичные операции при условии своевременного внесения минимальных платежей и полного
+                погашения задолженности последнего отчетного периода. Ставка 19-49% годовых определяется индивидуально
+                по результатам оценки кредитоспособности клиента и категории совершаемых клиентом операций по карте.
+                Лимит кредита возобновляемый 15 000-600 000 руб., срок действия лимита не ограничен сроком действия
+                кредитной карты. Кредитный договор действует до момента исполнения сторонами своих обязательств.
+                Комиссии: за процессинг по картам, подключенным к программе лояльности: не взимается по акции/ вне акции
+                1490 руб. в год по основной карте, 500 рублей в год по дополнительной карте; за выдачу наличных в
+                банкоматах банка и банков-партнеров – 3% от суммы снятия+300 руб/ в иных банкоматах – 3,9 % + 300 руб.;
+                за переводы на карты банка/на карты других банков — 3% от суммы перевода+300 руб.; за
+                квази-кэш-операции—3% от суммы операции + 300 руб.; за сервис «уведомление об операциях» - 60 руб. по
+                основной/45 руб. по дополнительной карте в мес.; за совершение операции за рубежом в валюте, отличной от
+                валюты счета — 1,65% от суммы операции; за внесение наличных денежных средств через кассу банка — 100
+                руб. (при внесении до 10 000 руб.).Банк принимает решение о предоставлении кредита на основании всей
+                полученной информации и требований к заемщику. Действительно на 01.06.20. АО «Райффайзенбанк» 0+</p>
+        </div>
+    </section>
+</footer>
 <script src="js/script.js"></script>
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  var block_show = null;
+
+  function scrollTracking() {
+    var wt = $(window).scrollTop();
+    var wh = $(window).height();
+    var et = $('#form').offset().top;
+    var eh = $('#form').outerHeight();
+
+    if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
+      if (block_show == null || block_show == false) {
+        $('#lead-btn').addClass('lead__btn--hidden');
+      }
+      block_show = true;
+    } else {
+      if (block_show == null || block_show == true) {
+        $('#lead-btn').removeClass('lead__btn--hidden');
+      }
+      block_show = false;
+    }
+  }
+
+  $(window).scroll(function () {
+    scrollTracking();
+  });
+
+  $(document).ready(function () {
+    scrollTracking();
+  });
+</script>
 </body>
 
 </html>

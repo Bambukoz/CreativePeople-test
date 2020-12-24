@@ -2,10 +2,10 @@
 (() => {
   const calculator = document.querySelector(`.calculator`);
   const amountInput = calculator.querySelector(`#amount`);
-  const progerssAmount = calculator.querySelector(`#progress-amount`);
+  const progressAmount = calculator.querySelector(`#progress-amount`);
   const amountText = calculator.querySelector(`#amount-text`);
   const termInput = calculator.querySelector(`#term`);
-  const progerssTerm = calculator.querySelector(`#progress-term`);
+  const progressTerm = calculator.querySelector(`#progress-term`);
   const termText = calculator.querySelector(`#term-text`);
   const creditResult = document.querySelector(`.credit__result`);
   const loanRate = creditResult.querySelector(`#loan_rate`);
@@ -14,14 +14,14 @@
   const setProgressValue = (target) => {
     let b = (target.value / target.max);
     if (target === amountInput) {
-      progerssAmount.style.transform = `scale(${b}, 1)`;
+      progressAmount.style.transform = `scale(${b}, 1)`;
     } else {
       if (b <= 0.5) {
-        progerssTerm.style.transform = `scale(${b - 0.16}, 1)`;
+        progressTerm.style.transform = `scale(${b - 0.16}, 1)`;
       } else if (b <= 0.7) {
-        progerssTerm.style.transform = `scale(${b - 0.08}, 1)`;
+        progressTerm.style.transform = `scale(${b - 0.08}, 1)`;
       } else {
-        progerssTerm.style.transform = `scale(${b - 0.05}, 1)`;
+        progressTerm.style.transform = `scale(${b - 0.05}, 1)`;
       }
     }
   };
