@@ -1,13 +1,15 @@
 .promo {
   width: 171px;
-  height: 34px;
+  min-height: 34px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url("../img/svg/sticker.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 14px;
+  padding: 1px;
 
   @media (min-width: 1060px) {
     width: 236px;
