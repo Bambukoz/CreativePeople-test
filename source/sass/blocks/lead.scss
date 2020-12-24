@@ -112,4 +112,12 @@
     padding: 15px 28px;
     border-radius: 10px;
   }
+
+  &--hidden {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
 }

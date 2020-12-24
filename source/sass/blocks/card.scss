@@ -1,0 +1,101 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 79px;
+    padding-bottom: 90px;
+  }
+}
+
+.card__lead {
+  @include page-wrapper-mobile;
+  width: 100%;
+  align-items: center;
+}
+
+.card__title {
+  @include style-reset;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 26px;
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 44px;
+  }
+}
+
+.card__list {
+  @include page-wrapper-mobile;
+  @include list-reset;
+  @include auto-margin;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @include desktop {
+    max-width: none;
+    flex-direction: row;
+    padding-left: 259px;
+    padding-right: 220px;
+    margin-bottom: 29px;
+  }
+}
+
+.card__item {
+  @include style-reset;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 20px;
+
+  @include desktop {
+    width: 267px;
+    margin-right: 22px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:first-child {
+    @include desktop {
+      margin-right: 37px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @include desktop {
+      margin-left: 0;
+    }
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 15px;
+
+    @include desktop {
+      left: 0;
+    }
+  }
+}
+
+.card__text {
+  @include style-reset;
+  font-size: 16px;
+  padding-left: 35px;
+}
