@@ -47,7 +47,7 @@
       <change beforePath="$PROJECT_DIR$/../redsoft-test/source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/source/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redsoft-test/source/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../redsoft-test/source/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/sass/blocks/promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/promo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/sass/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/sass/blocks/footer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608551919122</updated>
       <workItem from="1608551920305" duration="4773000" />
-      <workItem from="1608558146137" duration="99148000" />
+      <workItem from="1608558146137" duration="99862000" />
+      <workItem from="1608877521031" duration="2477000" />
     </task>
     <servers />
   </component>
