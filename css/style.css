@@ -1082,7 +1082,8 @@ picture {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #e1e1e3;
-  padding-top: 26px; }
+  padding-top: 26px;
+  padding-bottom: 54px; }
   @media (min-width: 1400px) {
     .footer {
       padding-top: 29px;
