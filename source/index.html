@@ -121,8 +121,7 @@
         </ul>
     </section>
     <section class="credit">
-        <h2 class="credit__title"><span class="credit__title credit__title--desktop">Возьмите </span>дополнительный кредит<span
-                class="credit__title credit__title--mobile"> на любые цели</span></h2>
+        <h2 class="credit__title"><span class="credit__title credit__title--desktop">Возьмите </span>дополнительный кредит<span class="credit__title credit__title--mobile"> на любые цели</span></h2>
         <p class="credit__text"><span>Кредит на любые цели. </span>Получите решение за 2 минуты</p>
         <article class="credit__wrapper">
             <h2 class="visually-hidden">Кредитный калькулятор</h2>
@@ -134,7 +133,6 @@
                         </p>
                     </div>
                     <div class="calculator__input-wrapper">
-                        <span class="calculator__progress" id="progress-amount"></span>
                         <input class="calculator__input" id="amount" name="amount" type="range" min="90000" max="2000000" step="1000" value="500000">
                     </div>
                     <div class="calculator__wrapper">
@@ -148,7 +146,6 @@
                         <p class="calculator__text" id="term-text"><span class="calculator__value"></span>36 мес.</p>
                     </div>
                     <div class="calculator__input-wrapper">
-                        <span class="calculator__progress" id="progress-term"></span>
                         <input class="calculator__input" id="term" name="term" type="range" min="13" max="60" step="1" value="36">
                     </div>
                     <div class="calculator__wrapper">
@@ -299,38 +296,8 @@
         </div>
     </section>
 </footer>
+
 <script src="js/script.js"></script>
-<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
-<script>
-  var block_show = null;
-
-  function scrollTracking() {
-    var wt = $(window).scrollTop();
-    var wh = $(window).height();
-    var et = $('#form').offset().top;
-    var eh = $('#form').outerHeight();
-
-    if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
-      if (block_show == null || block_show == false) {
-        $('#lead-btn').addClass('lead__btn--hidden');
-      }
-      block_show = true;
-    } else {
-      if (block_show == null || block_show == true) {
-        $('#lead-btn').removeClass('lead__btn--hidden');
-      }
-      block_show = false;
-    }
-  }
-
-  $(window).scroll(function () {
-    scrollTracking();
-  });
-
-  $(document).ready(function () {
-    scrollTracking();
-  });
-</script>
 </body>
 
 </html>
